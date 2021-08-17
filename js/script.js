@@ -17,4 +17,31 @@
 
 // alert(`Good moning, ${category}`);
 
-const numberOfFilms = prompt("сколько фильмов вы уже посмотрели", '');
+const numberOfFilms = +prompt("сколько фильмов вы уже посмотрели", '');
+
+const personalMovieDB = {
+   count: numberOfFilms,
+   movie: {},
+   actors: {},
+   genres: [],
+   private: false
+
+};
+
+// personalMovieDB.count = numberOfFilms;
+// personalMovieDB.movies = [];
+// personalMovieDB.actors = [];
+// personalMovieDB.genres = {};
+// personalMovieDB.private = false;
+
+// console.log(personalMovieDB);
+
+const questions1 = prompt('Один из послдених просмотренных фильмов', ''),
+   questions2 = prompt('На сколько оцените его', ''),
+   questions3 = prompt('Один из послдених просмотренных фильмов', ''),
+   questions4 = prompt('На сколько оцените его', '');
+
+personalMovieDB.movie[questions1] = questions2;
+personalMovieDB.movie[questions3] = questions4;
+
+console.log(personalMovieDB);
