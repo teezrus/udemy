@@ -11,8 +11,10 @@
 // delete answer[2];
 // console.log(answer)
 
-const category = 'toys';
+// const category = 'toys';
 
-console.log(`http://rename/${category}`)
+// console.log(`http://rename/${category}`)
 
-alert(`Good moning, ${category}`);
+// alert(`Good moning, ${category}`);
+
+const numberOfFilms = prompt("сколько фильмов вы уже посмотрели", '');
